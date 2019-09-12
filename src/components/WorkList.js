@@ -3,7 +3,7 @@ import Work from './Work'
 
 import michaelKorsImage from '../images/watch-hunger-stop.jpg'
 import eOnline from '../images/e-online.jpg'
-import ebay from '../images/ebay.jpg'
+import ebay from '../images/ebay.png'
 import playboy from '../images/playboy.png'
 
 const NONE = undefined;
@@ -33,8 +33,10 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 0)}
               isOpen={awi === 0}
               fadeOut={awi !== NONE && awi !== 0}>
+          <div className="tc">
+            <img className="h3" src={ebay} alt="ebay" />
+          </div>
           <p className="i">Member of Technical Staff I</p>
-          <img src={ebay} alt="ebay" />
           <p>Built the new Node.js web frontend for the <a href="https://www.ebay.com">eBay desktop and mobile homepages</a>, while supporting legacy homepages.  Coordinated with iOS, Android, and service engineers to build new features. Wrote the client-side code for many of the modules on the current eBay homepage.</p>
           <p>Unified desktop and mobile web experiences to one responsive application behind a single subdomain.   Coordinated production rollouts and monitoring. Mentored junior engineers in team.</p>
           <p>Promoted from Software Engineer III to <a href="https://www.levels.fyi/?compare=eBay&track=Software%20Engineer">Member of Technical Staff I</a> in 2018.</p>
@@ -52,7 +54,6 @@ class WorkList extends Component {
           <p>Created specifications, time/cost estimates, building prototypes, and production-ready backend code for the API, website, image processing service, and other microservices. I worked directly with vendors to integrate their services into our stack.</p>
           <p>Scaled the backend product from its inception up to a product able to handle 2,500 API request/sec and 3,000 image requests/sec.</p>
           <p>Identify production issues before they occur through proactive monitoring, and debugging production issues as they happen.  I continually identified performance bottlenecks and opportunities to reduce overhead.</p>
-          <p>PHHHOTO </p>
         </Work>
 
         <Work company="HYPERHYPER"
