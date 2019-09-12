@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../styles/Work.scss'
 
 class Work extends Component {
 
@@ -11,7 +12,7 @@ class Work extends Component {
 
     return (
       <div className={rootClassName}>
-        <div className={`tc f3 ttu avenir pa2 ${ isOpen ? 'b' : ''}`}
+        <div className={`work-company tc f3 ttu avenir pa2 tracked fw2 ${ isOpen ? 'b' : ''}`}
              onClick={this.props.handleClick}>
           {this.props.company}
         </div>

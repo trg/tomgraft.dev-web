@@ -8,6 +8,8 @@
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
+    "simple-icons": "^1.15.0",
+    "simple-icons-react-component": "^1.0.0",
     "tachyons": "^4.11.1"
   },
   "scripts": {
