@@ -12,7 +12,7 @@ class Work extends Component {
 
     return (
       <div className={rootClassName}>
-        <div className={`work-company tc f3 ttu avenir pa2 tracked fw2 ${ isOpen ? 'b' : ''}`}
+        <div className={`work-company tc f3 ttu avenir pa2 tracked ${ isOpen ? 'fw3' : 'fw2'}`}
              onClick={this.props.handleClick}>
           {this.props.company}
         </div>
