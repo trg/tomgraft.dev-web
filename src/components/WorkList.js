@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import Work from './Work'
 
+import michaelKorsImage from '../images/watch-hunger-stop.jpg'
+import eOnline from '../images/e-online.jpg'
+import ebay from '../images/ebay.jpg'
+import playboy from '../images/playboy.png'
+
 const NONE = undefined;
 
 class WorkList extends Component {
@@ -29,9 +34,10 @@ class WorkList extends Component {
               isOpen={awi === 0}
               fadeOut={awi !== NONE && awi !== 0}>
           <p className="i">Member of Technical Staff I</p>
-          <p>Built the new Node.js web frontend for the eBay desktop and mobile homepages, while supporting legacy homepages.  Coordinated with iOS, Android, and service engineers to build new features. Wrote the client-side code for many of the modules on the current eBay homepage.</p>
+          <img src={ebay} alt="ebay" />
+          <p>Built the new Node.js web frontend for the <a href="https://www.ebay.com">eBay desktop and mobile homepages</a>, while supporting legacy homepages.  Coordinated with iOS, Android, and service engineers to build new features. Wrote the client-side code for many of the modules on the current eBay homepage.</p>
           <p>Unified desktop and mobile web experiences to one responsive application behind a single subdomain.   Coordinated production rollouts and monitoring. Mentored junior engineers in team.</p>
-          <p>Promoted from Software Engineer III to Member of Technical Staff I in 2018.</p>
+          <p>Promoted from Software Engineer III to <a href="https://www.levels.fyi/?compare=eBay&track=Software%20Engineer">Member of Technical Staff I</a> in 2018.</p>
         </Work>
 
         <Work company="PHHHOTO"
@@ -41,10 +47,12 @@ class WorkList extends Component {
               isOpen={awi === 1}
               fadeOut={awi !== NONE && awi !== 1}>
           <p className="i">Senior Engineer / Architect, DevOps</p>
-          <p>Coordinating with the client (iOS and Android) and product owners to spec and build new features in a test-driven environment.</p>
-          <p>Creating specifications, time/cost estimates, building prototypes, and production-ready backend code for the API, website, image processing service, and other microservices. I worked directly with vendors to integrate their services into our stack.</p>
-          <p>Scaling the backend product from its inception up to a product able to handle 2,500 API request/sec and 3,000 image requests/sec.</p>
-          <p>Identifying production issues before they occur through proactive monitoring, and debugging production issues as they happen.  I continually identified performance bottlenecks and opportunities to reduce overhead.</p>
+          <p>PHHHOTO was a GIF based social network and premium photobooth experience.  It lives on today as <a href="https://hypno.com">HYPNO</a>.</p>
+          <p>I coordinated with the client (iOS and Android) and product owners to spec and build new features in a test-driven environment.</p>
+          <p>Created specifications, time/cost estimates, building prototypes, and production-ready backend code for the API, website, image processing service, and other microservices. I worked directly with vendors to integrate their services into our stack.</p>
+          <p>Scaled the backend product from its inception up to a product able to handle 2,500 API request/sec and 3,000 image requests/sec.</p>
+          <p>Identify production issues before they occur through proactive monitoring, and debugging production issues as they happen.  I continually identified performance bottlenecks and opportunities to reduce overhead.</p>
+          <p>PHHHOTO </p>
         </Work>
 
         <Work company="HYPERHYPER"
@@ -54,7 +62,7 @@ class WorkList extends Component {
               isOpen={awi === 2}
               fadeOut={awi !== NONE && awi !== 2}>
           <p class="i">wore too many hats to count</p>
-          <p>HYPERHYPER was a full service digital agency, through which I worked on several of the projects below. My role included vetting and estimating client work and building out front and backend components, often as the sole developer.  I worked with clients directly on-site as needed.</p>
+          <p><a href="http://hyperhyper.com/">HYPERHYPER</a> was a full service digital agency, through which I worked on several of the projects below. My role included vetting and estimating client work and building out front and backend components, often as the sole developer.  I worked with clients directly on-site as needed.</p>
           <p>PHHHOTO was a HYPERHYPER side project that became it's own company and today operates as HYPNO.  I transitioned around 2014 from working on HYPERHYPER client work to doing PHHHOTO work full-time.</p>
         </Work>
 
@@ -64,7 +72,10 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 3)}
               isOpen={awi === 3}
               fadeOut={awi !== NONE && awi !== 3}>
-          <p>Built a custom Ruby on Rails stack using Contentful CMS as the primary datastore for articles, custom markup for editors, and Handlebars as the template engine.</p>
+          <div className="tc">
+            <img className="h3" src={playboy} alt="Playboy" />
+          </div>
+          <p>Created the new <a href="https://playboy.com">Playboy.com</a> and <a href="https://playmates.com">Playmates.com</a> websites from the ground up.  Built a custom Ruby on Rails stack using Contentful CMS as the primary datastore for articles, custom markup for editors, and Handlebars as the template engine.</p>
         </Work>
 
         <Work company="E! Online"
@@ -73,7 +84,9 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 4)}
               isOpen={awi === 4}
               fadeOut={awi !== NONE && awi !== 4}>
-          <p>Created one of the web's most visited gallery experiences, enabling E! Online to immediately generate million+ dollars in revenue via ad slots integrated into the fully responsive interactive gallery.</p>
+          <img src={eOnline} alt="E! Online" />
+          <p>Created one of the web's most visited gallery experiences, enabling E! Online to immediately generate million+ dollars in revenue via ad slots integrated into the fully responsive desktop interactive gallery.</p>
+          <p>As of 2019 it is still being used, if you're not on mobile check out an example <a href="https://www.eonline.com/photos/18182/margot-robbie-s-best-looks/947597">here</a>.</p>
         </Work>
 
         <Work company="Red Bull"
@@ -94,7 +107,8 @@ class WorkList extends Component {
               isOpen={awi === 6}
               tech="Backend"
               fadeOut={awi !== NONE && awi !== 6}>
-          <p>A live event powered by PHHHOTO booths where we streamed video from iPads at Michael Kors stores around the world to a billboard in Times Square.</p>
+          <img src={michaelKorsImage} alt="Michael Kors billboard" />
+          <p>A live event powered by PHHHOTO booths where we streamed video from iPads at Michael Kors stores around the world to a billboard in Times Square.  Check out the video <a href="https://vimeo.com/90696625">on Vimeo</a>.</p>
         </Work>
 
         <Work company="Band of Outsiders"
@@ -112,7 +126,7 @@ class WorkList extends Component {
               isOpen={awi === 8}
               tech="Javascript, HTML, CSS"
               fadeOut={awi !== NONE && awi !== 8}>
-          <p>Built frontend code for the web property of VFILES Magazine.</p>
+          <p>Launched the new <a href="https://vfiles.com">VFILES website</a>.</p>
         </Work>
 
         <Work company="razorfish"
@@ -147,7 +161,7 @@ class WorkList extends Component {
         
 
         <Work company="MocoSpace"
-              via="full-time, 008-2009"
+              via="full-time, 2008-2009"
               handleClick={this.handleClick.bind(this, 12)}
               isOpen={awi === 12}
               tech="JSP, PHP, Javascript, HTML/CSS, SQL"

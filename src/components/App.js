@@ -26,7 +26,10 @@ function App() {
             <a href="/blog"><SimpleIcons name="WordPress" /></a>
           </div>
         </div>
-        <div className="tc pa3"><a href="mailto:tom@tomgraft.dev">tom@tomgraft.dev</a></div>
+        <div className="tc pa3 black">
+          let's work together<br />
+          <a href="mailto:tom@tomgraft.dev">tom@tomgraft.dev</a>
+        </div>
       </footer>
     </>
   );
