@@ -99,6 +99,7 @@ class WorkList extends Component {
           <p><span className="b">Red Bull Sound Select</span></p>
           <p>Customized a Django CMS to interface with Red Bull’s existing content management system.  Built out designs for redbullsoundselect.com.</p>
           <p><span className="b">Red Bull Social Wall</span></p>
+          <p><a href="https://vimeo.com/75530239">Watch a video of it here</a>.</p>
           <p>I created a projected backdrop which played behind live performances across the country.  Audience members could have their Instagram pictures shown on stage in real-time by tagging their photos with a specific hashtag.    I built a CMS that let the operator set custom messages and graphics to rotate in at set intervals or takeover the grid. Operators also had access to a moderation tool I authored.</p>
         </Work>
 
