@@ -21,6 +21,7 @@ class Work extends Component {
             <div className="ph3">
               {this.props.children}
             </div>
+            <p className="f7 ph3 tr o-70">Tech: {this.props.tech}</p>
           </div>
         ) : ''}
       </div>
