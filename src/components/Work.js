@@ -8,7 +8,7 @@ class Work extends Component {
     const fadeOut = this.props.fadeOut
 
     let rootClassName = isOpen ? 'active' : ''
-    rootClassName += fadeOut ? ' o-20' : ''
+    rootClassName += fadeOut ? ' o-40' : ''
 
     return (
       <div className={rootClassName}>
