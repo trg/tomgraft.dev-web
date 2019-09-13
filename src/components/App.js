@@ -14,7 +14,7 @@ function App() {
         <WorkList />
       </div>
 
-      <footer class="avenir mw5 center mt3 ph3 pt5 pb5">
+      <footer className="avenir mw5 center mt3 ph3 pt5 pb5">
         <div className="tc">
           <div className="w2 h2 dib ma2">
             <a href="https://github.com/trg"><SimpleIcons name="GitHub" /></a>

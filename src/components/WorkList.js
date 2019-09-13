@@ -17,10 +17,17 @@ class WorkList extends Component {
     }
   }
 
+  scrollActiveWorkIntoView() {
+    if (this.state.activeWorkIndex !== NONE) {
+      const work = document.getElementsByClassName('work-company')[this.state.activeWorkIndex]
+      const offset = work.offsetTop - 100;
+      window.scrollTo(0, offset);
+    }
+  }
+
   handleClick(index) {
-    console.log(index)
     const newIndex = index === this.state.activeWorkIndex ? NONE : index
-    this.setState({ activeWorkIndex: newIndex })
+    this.setState({ activeWorkIndex: newIndex }, this.scrollActiveWorkIntoView)
   }
 
   render() {
@@ -62,7 +69,7 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 2)}
               isOpen={awi === 2}
               fadeOut={awi !== NONE && awi !== 2}>
-          <p class="i">wore too many hats to count</p>
+          <p className="i">wore too many hats to count</p>
           <p><a href="http://hyperhyper.com/">HYPERHYPER</a> was a full service digital agency, through which I worked on several of the projects below. My role included vetting and estimating client work and building out front and backend components, often as the sole developer.  I worked with clients directly on-site as needed.</p>
           <p>PHHHOTO was a HYPERHYPER side project that became it's own company and today operates as HYPNO.  I transitioned around 2014 from working on HYPERHYPER client work to doing PHHHOTO work full-time.</p>
         </Work>
@@ -155,7 +162,7 @@ class WorkList extends Component {
               isOpen={awi === 11}
               tech=" Java/Groovy, HTML/CSS, Javascript"
               fadeOut={awi !== NONE && awi !== 11}>
-          <p class="i">Mobile Web Application Developer</p>
+          <p className="i">Mobile Web Application Developer</p>
           <p>One of two developers creating and maintaining features across MLB.com mobile web properties, both front and backend code.</p>
           <p>Built Minor League Baseball’s mobile site, Tiger Woods’ mobile site, and the webviews for the Ballpark mobile web app.</p>
           <p>Supported the MLB AtBat application WebViews.</p>
@@ -168,7 +175,7 @@ class WorkList extends Component {
               isOpen={awi === 12}
               tech="JSP, PHP, Javascript, HTML/CSS, SQL"
               fadeOut={awi !== NONE && awi !== 12}>
-          <p class="i">Web Developer</p>
+          <p className="i">Web Developer</p>
           <p>MocoSpace is a mobile social community. I was responsible for developing new website features, including a new web chat client and internal reporting system.</p>
         </Work>
 
@@ -178,16 +185,9 @@ class WorkList extends Component {
               isOpen={awi === 13}
               tech="PHP, Python, Javascript, HTML/CSS"
               fadeOut={awi !== NONE && awi !== 13}>
-          <p class="i">Web Developer</p>
+          <p className="i">Web Developer</p>
           <p>Finetune was a social music startup. I maintained the Facebook application and developed internal software</p>
         </Work>
-
-        {/*
-
-
-        <div class="tc f3 ttu avenir pa2">MocoSpace</div>
-
-        <div class="tc f3 ttu avenir pa2">Finetune</div> */}
       </>
     );
   }
