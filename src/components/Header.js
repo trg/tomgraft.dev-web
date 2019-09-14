@@ -9,7 +9,8 @@ class Header extends Component {
         <h1 className="f2 f4-ns fw4 mid-gray">Tom Graft</h1>
         <h2 className="f5 dark-grey fw2 ttu tracked">
           Full Stack Web Developer<br />
-          11 years experience<br />
+          {/* 11 years experience<br /> */}
+          Since 2007<br />
           Brooklyn, NY
         </h2>
       </header>
