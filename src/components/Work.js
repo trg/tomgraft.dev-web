@@ -7,7 +7,7 @@ class Work extends Component {
     const isOpen = this.props.isOpen
     const fadeOut = this.props.fadeOut
 
-    let rootClassName = isOpen ? 'active' : ''
+    let rootClassName = isOpen ? 'work-active' : ''
     rootClassName += fadeOut ? ' o-40' : ''
 
     return (
@@ -22,7 +22,9 @@ class Work extends Component {
             <div className="ph3">
               {this.props.children}
             </div>
-            <p className="f7 ph3 tr o-70">Tech: {this.props.tech}</p>
+            {this.props.tech ? (
+              <p className="f7 ph3 tr o-70">Tech: {this.props.tech}</p>
+            ) : ''}
           </div>
         ) : ''}
       </div>

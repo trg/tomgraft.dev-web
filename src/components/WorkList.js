@@ -19,7 +19,8 @@ class WorkList extends Component {
 
   scrollActiveWorkIntoView() {
     if (this.state.activeWorkIndex !== NONE) {
-      const work = document.getElementsByClassName('work-company')[this.state.activeWorkIndex]
+      // const work = document.getElementsByClassName('work-company')[this.state.activeWorkIndex]
+      const work = document.getElementsByClassName('work-active')[0]
       const offset = work.offsetTop - 100;
       window.scrollTo(0, offset);
     }
@@ -34,6 +35,13 @@ class WorkList extends Component {
     let awi = this.state.activeWorkIndex;
     return (
       <>
+        <Work company="ONUMA"
+              via="coming soon"
+              handleClick={this.handleClick.bind(this, 100)}
+              isOpen={awi === 100}
+              fadeOut={awi !== NONE && awi !== 100}>
+          
+        </Work>
         <Work company="ebay"
               via="full time, 2016-2019"
               tech="Node.js, Marko (JS Framework), HTML / CSS"
