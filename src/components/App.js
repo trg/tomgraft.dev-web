@@ -25,9 +25,9 @@ function App() {
           <div className="w2 h2 dib ma2">
             <a href="https://twitter.com/t__"><SimpleIcons name="Twitter" /></a>
           </div>
-          <div className="w2 h2 dib ma2">
+          {/* <div className="w2 h2 dib ma2">
             <a href="/blog"><SimpleIcons name="WordPress" /></a>
-          </div>
+          </div> */}
         </div>
         <div className="tc pa3 black">
           let's work together<br />
