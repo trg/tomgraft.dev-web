@@ -4,10 +4,14 @@ class Image extends Component {
 
   render() {
 
+    const mainImage = (<img className={this.props.className}
+                            src={this.props.src} 
+                            alt={this.props.alt} />);
+
     return (
-      <img className={this.props.className}
-           src={this.props.src} 
-           alt={this.props.alt} />
+      (this.props.canExpand ? (
+        <a href={this.props.src}>{mainImage}</a>
+      ) : mainImage)
     );
   }
 }

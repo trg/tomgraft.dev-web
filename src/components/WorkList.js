@@ -81,8 +81,8 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 1)}
               isOpen={awi === 1}
               fadeOut={awi !== NONE && awi !== 1}>
-          <Image src={phhhoto} alt="PHHHOTO" />
-          <Image src={phhhotoDiagram} alt="PHHHOTO Architecture" />
+          <Image src={phhhoto} canExpand={true} alt="PHHHOTO" />
+          <Image src={phhhotoDiagram} canExpand={true} alt="PHHHOTO Architecture" />
           <p className="i">Senior Engineer / Architect, DevOps</p>
           <p>PHHHOTO was a GIF based social network and premium photobooth experience.  It lives on today as <a href="https://hypno.com">HYPNO</a>.</p>
           <p>I coordinated with the client (iOS and Android) and product owners to spec and build new features in a test-driven environment.</p>
@@ -121,7 +121,7 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 4)}
               isOpen={awi === 4}
               fadeOut={awi !== NONE && awi !== 4}>
-          <Image src={eOnline} alt="E! Online" />
+          <Image src={eOnline} canExpand={true} alt="E! Online" />
           <p>Created one of the web's most visited gallery experiences, enabling E! Online to immediately generate million+ dollars in revenue via ad slots integrated into the fully responsive desktop interactive gallery.</p>
           <p>As of 2019 it is still being used, if you're not on mobile check out an example <a href="https://www.eonline.com/photos/18182/margot-robbie-s-best-looks/947597">here</a>.</p>
         </Work>
