@@ -2,11 +2,15 @@ import React, { Component } from 'react'
 import { ImageHelper } from 'react-preload'
 
 import Work from './Work'
+import Image from './Image'
 
 import michaelKorsImage from '../images/watch-hunger-stop.jpg'
 import eOnline from '../images/e-online.jpg'
 import ebay from '../images/ebay.png'
 import playboy from '../images/playboy.png'
+import hyperhyper from '../images/hyperhyper.jpg'
+import phhhoto from '../images/phhhoto.jpg'
+import phhhotoDiagram from '../images/phhhoto-diagram.jpg'
 
 const NONE = undefined;
 
@@ -21,6 +25,9 @@ class WorkList extends Component {
 
   componentDidMount() {
     ImageHelper.stuffImages([
+      phhhoto,
+      phhhotoDiagram,
+      hyperhyper,
       michaelKorsImage,
       eOnline,
       ebay,
@@ -60,7 +67,7 @@ class WorkList extends Component {
               isOpen={awi === 0}
               fadeOut={awi !== NONE && awi !== 0}>
           <div className="tc">
-            <img className="h3" src={ebay} alt="ebay" />
+            <Image className="h3" src={ebay} alt="ebay" />
           </div>
           <p className="i">Member of Technical Staff I</p>
           <p>Built the new Node.js web frontend for the <a href="https://www.ebay.com">eBay desktop and mobile homepages</a>, while supporting legacy homepages.  Coordinated with iOS, Android, and service engineers to build new features. Wrote the client-side code for many of the modules on the current eBay homepage.</p>
@@ -74,6 +81,8 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 1)}
               isOpen={awi === 1}
               fadeOut={awi !== NONE && awi !== 1}>
+          <Image src={phhhoto} alt="PHHHOTO" />
+          <Image src={phhhotoDiagram} alt="PHHHOTO Architecture" />
           <p className="i">Senior Engineer / Architect, DevOps</p>
           <p>PHHHOTO was a GIF based social network and premium photobooth experience.  It lives on today as <a href="https://hypno.com">HYPNO</a>.</p>
           <p>I coordinated with the client (iOS and Android) and product owners to spec and build new features in a test-driven environment.</p>
@@ -88,6 +97,7 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 2)}
               isOpen={awi === 2}
               fadeOut={awi !== NONE && awi !== 2}>
+          <Image src={hyperhyper} alt="HYPERHYPER" />
           <p className="i">wore too many hats to count</p>
           <p><a href="http://hyperhyper.com/">HYPERHYPER</a> was a full service digital agency, through which I worked on several of the projects below. My role included vetting and estimating client work and building out front and backend components, often as the sole developer.  I worked with clients directly on-site as needed.</p>
           <p>PHHHOTO was a HYPERHYPER side project that became it's own company and today operates as HYPNO.  I transitioned around 2014 from working on HYPERHYPER client work to doing PHHHOTO work full-time.</p>
@@ -100,7 +110,7 @@ class WorkList extends Component {
               isOpen={awi === 3}
               fadeOut={awi !== NONE && awi !== 3}>
           <div className="tc">
-            <img className="h3" src={playboy} alt="Playboy" />
+            <Image className="h3" src={playboy} alt="Playboy" />
           </div>
           <p>Created the new <a href="https://playboy.com">Playboy.com</a> and <a href="https://playmates.com">Playmates.com</a> websites from the ground up.  Built a custom Ruby on Rails stack using Contentful CMS as the primary datastore for articles, custom markup for editors, and Handlebars as the template engine.</p>
         </Work>
@@ -111,7 +121,7 @@ class WorkList extends Component {
               handleClick={this.handleClick.bind(this, 4)}
               isOpen={awi === 4}
               fadeOut={awi !== NONE && awi !== 4}>
-          <img src={eOnline} alt="E! Online" />
+          <Image src={eOnline} alt="E! Online" />
           <p>Created one of the web's most visited gallery experiences, enabling E! Online to immediately generate million+ dollars in revenue via ad slots integrated into the fully responsive desktop interactive gallery.</p>
           <p>As of 2019 it is still being used, if you're not on mobile check out an example <a href="https://www.eonline.com/photos/18182/margot-robbie-s-best-looks/947597">here</a>.</p>
         </Work>
@@ -135,7 +145,7 @@ class WorkList extends Component {
               isOpen={awi === 6}
               tech="Backend"
               fadeOut={awi !== NONE && awi !== 6}>
-          <img src={michaelKorsImage} alt="Michael Kors billboard" />
+          <Image src={michaelKorsImage} alt="Michael Kors billboard" />
           <p>A live event powered by PHHHOTO booths where we streamed video from iPads at Michael Kors stores around the world to a billboard in Times Square.  Check out the video <a href="https://vimeo.com/90696625">on Vimeo</a>.</p>
         </Work>
 
