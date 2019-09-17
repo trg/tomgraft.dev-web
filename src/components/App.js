@@ -20,7 +20,7 @@ function App() {
             <a href="https://github.com/trg"><SimpleIcons name="GitHub" /></a>
           </div>
           <div className="w2 h2 dib ma2">
-            <a href="https://open.spotify.com/user/1229501187?si=yEnQoqJTSnOKVuVYiasILQ"><SimpleIcons name="Spotify" /></a>
+            <a href="https://www.upwork.com/o/profiles/users/_~0127246e78ce33d110/"><SimpleIcons name="Upwork" /></a>
           </div>
           <div className="w2 h2 dib ma2">
             <a href="https://twitter.com/t__"><SimpleIcons name="Twitter" /></a>
