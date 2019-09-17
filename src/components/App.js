@@ -23,6 +23,9 @@ function App() {
             <a href="https://www.upwork.com/o/profiles/users/_~0127246e78ce33d110/"><SimpleIcons name="Upwork" /></a>
           </div>
           <div className="w2 h2 dib ma2">
+            <a href="https://www.linkedin.com/in/thomasgraft/"><SimpleIcons name="LinkedIn" /></a>
+          </div>
+          <div className="w2 h2 dib ma2">
             <a href="https://twitter.com/t__"><SimpleIcons name="Twitter" /></a>
           </div>
           {/* <div className="w2 h2 dib ma2">
