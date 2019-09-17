@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { ImageHelper } from 'react-preload'
+
 import Work from './Work'
 
 import michaelKorsImage from '../images/watch-hunger-stop.jpg'
@@ -15,6 +17,15 @@ class WorkList extends Component {
     this.state = {
       activeWorkIndex: NONE
     }
+  }
+
+  componentDidMount() {
+    ImageHelper.stuffImages([
+      michaelKorsImage,
+      eOnline,
+      ebay,
+      playboy
+    ])
   }
 
   scrollActiveWorkIntoView() {
