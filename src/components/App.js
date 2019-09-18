@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <Header />
-      <div className="f2 avenir tc ttu pa2 tracked fw2">Work</div>
       <div className="mw6 center">
         <WorkList />
       </div>

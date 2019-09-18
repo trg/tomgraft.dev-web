@@ -53,6 +53,7 @@ class WorkList extends Component {
     let awi = this.state.activeWorkIndex;
     return (
       <>
+        <div className="f2 avenir tc ttu pa2 tracked fw2">Work</div>
         <Work company="ONUMA"
               via="coming soon"
               handleClick={this.handleClick.bind(this, 100)}
@@ -86,7 +87,7 @@ class WorkList extends Component {
           <p className="i">Senior Engineer / Architect, DevOps</p>
           <p>PHHHOTO was a GIF based social network and premium photobooth experience.  It lives on today as <a href="https://hypno.com">HYPNO</a>.</p>
           <p>I coordinated with the client (iOS and Android) and product owners to spec and build new features in a test-driven environment.</p>
-          <p>Created specifications, time/cost estimates, building prototypes, and production-ready backend code for the API, website, image processing service, and other microservices. I worked directly with vendors to integrate their services into our stack.</p>
+          <p>I Wrote specifications, time/cost estimates, built prototypes and production-ready backend code for the API, website, image processing service, and other microservices. I worked directly with vendors to integrate their services into our stack.</p>
           <p>Scaled the backend product from its inception up to a product able to handle 2,500 API request/sec and 3,000 image requests/sec.</p>
           <p>Identify production issues before they occur through proactive monitoring, and debugging production issues as they happen.  I continually identified performance bottlenecks and opportunities to reduce overhead.</p>
         </Work>
